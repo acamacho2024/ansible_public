@@ -4,7 +4,7 @@
   become: false
   gather_facts: false
   tasks:
-  - name: Crea directorio de temp windows
-    ansible.windows.win_file:
-      path: c:/users/ansible/desktop/temp/
-      state: directory
+    - name: Crea directorio de temp windows
+      ansible.windows.win_file:
+        path: c:/users/ansible/desktop/temp/
+        state: directory
