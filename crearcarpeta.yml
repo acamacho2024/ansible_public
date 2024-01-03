@@ -1,6 +1,5 @@
 ---
 - name: Playbook para sacar parches windows y uptime linux
-  hosts: Windows
   become: false
   gather_facts: false
   tasks:
