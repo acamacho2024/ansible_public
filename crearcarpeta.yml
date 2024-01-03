@@ -1,7 +1,10 @@
 ---
-- name: Crear carpeta en Windows
-  hosts: all
+- name: Playbook para sacar parches windows y uptime linux
+  hosts: windows
+  become: false
   gather_facts: false
   tasks:
-    - name: Crear carpeta
-      win_shell: New-Item -ItemType Directory -Path C:\ansible_directorio
+  - name: Crea directorio de temp windows
+    ansible.windows.win_file:
+      path: c:/users/ansible/desktop/temp/
+      state: directory
