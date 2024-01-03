@@ -1,6 +1,6 @@
 ---
 - name: Crear carpeta en Windows
-  hosts: tu_servidor_windows
+  hosts: all
   gather_facts: false
   tasks:
     - name: Crear carpeta
